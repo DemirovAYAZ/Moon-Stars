@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #292256 0%, #8446cf 70%, #a871d6 100%);
+    overflow: hidden;
+  }
+  
+  #stars > i {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 25px #fff;
+    animation: twinkle linear infinite;
+  }
+  
+  .moon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: wheat;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 30px rgb(255, 255, 255));
+    margin: auto;
+  }
+  h1{
+    font-family:Montserrat, sans-serif;
+    font-size: 2em;
+    letter-spacing: 3px;
+    padding-top: 30px;
+    color: white;
+    filter: drop-shadow(0 0 10px white);
+  }
+  .spot-1{
+    position: absolute;
+    top: 20px;
+    left: 18px;
+    background-color: rgb(185, 185, 185);
+    filter: blur(3px);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .spot-2{
+    position: absolute;
+    top: 50px;
+    left: 28px;
+    background-color: rgb(185, 185, 185);
+    filter: blur(2px);
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+  }
+  .spot-3{
+    position: absolute;
+    bottom: 20px;
+    left: 8px;
+    background-color: rgb(185, 185, 185);
+    filter: blur(3px);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .left-eye {
+    position: absolute;
+    top: 33px;
+    left: 18px;
+    width: 25px;
+    height: 10px;
+    border: 3px solid #666;
+    border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    animation: sleepy-eye 5s linear infinite;
+  }
+
+  .right-eye {
+    position: absolute;
+    top: 33px;
+    right: 18px;
+    width: 25px;
+    height: 10px;
+    border: 3px solid #666;
+    border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    animation: sleepy-eye 5s linear infinite;
+  }
+  .mouth{
+    position: absolute;
+    bottom: 25px;
+    left: 45px;
+    width: 10px;
+    border-radius: 50%;
+    height: 10px;
+    background-color: #666;
+    animation: mouth 5s linear infinite;
+  }
+  @keyframes twinkle {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    95% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes sleepy-eye {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-13deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes mouth{
+    0%{
+        width: 10px;
+        height: 10px;
+    }
+    50%{
+        width: 18px;
+        height: 18px;
+    }
+    100%{
+        width: 10px;
+        heigth: 10px;
+    }
+  }
+  
